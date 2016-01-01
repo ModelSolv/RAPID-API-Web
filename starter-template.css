@@ -1,7 +1,65 @@
-body {
-  padding-top: 50px;
+
+.landing-page ul
+{
+    list-style-type: none;
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+
+.landing-page ul li p.h4{
+    line-height: 1.5;
+}
+
+.landing-page .starter-template {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.landing-page .starter-template .summary{
+    margin: 30px 0;
+}
+
+.landing-page .starter-template .page-header{
+    margin: 0;
+}
+
+.landing-page .section .row{
+    margin: 50px 0;
+}
+
+.landing-page section.editing-tools img{
+    height: 75px;
+    width: 250px;
+    margin: 20px auto;
+}
+
+.landing-page section.editing-tools p{
+    width: 45%;
+    margin: 20px auto;
+}
+
+.landing-page .grid-border-container .col-md-4{
+    border: 1px solid #cccccc;
+    padding: 25px;
+}
+
+.landing-page .grid-border-container .border-width{
+    border-width: 1px 1px 1px 0;
+}
+
+.landing-page .grid-border-container img{
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.landing-page footer{
+    margin: 30px 0;
+}
+
+.landing-page .modal-header, .landing-page .modal-footer{
+    background: none;
+}
+
+@media(min-width:320px) and (max-width:992px){
+    .landing-page .grid-border-container .border-width{
+        border-width: 0 1px 1px 1px;
+    }
 }

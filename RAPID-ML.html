@@ -1,98 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Starter Template for Bootstrap</title>
-        <!-- Bootstrap core CSS -->
-        <!-- Custom styles for this template -->
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>RAPID-ML</title>
+    <!-- Bootstrap core CSS -->
+    <!-- Custom styles for this template -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-        <link href="bootswatch-gh-pages/bootswatch-gh-pages/superhero/bootstrap.css" rel="stylesheet" type="text/css">
-        <link href="bootswatch-gh-pages/bootswatch-gh-pages/simplex/bootstrap.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="starter-template">
-                <div class="jumbotron">
-                    <img src="img/RAPID-ML%20Logo/RAPID-ML%20Logo.png" width="800"> 
-                    <h1>Domain-Driven API Modeling</h1>
-                    <p class="lead">RAPID-ML puts data modeling at the center of API design.</p>
-                    <ul>
-                        <p class="">Describe data types <i>naturally </i>with an expressive, technology-independent modeling language.&nbsp;</p>
-                        <p class="">Share canonical data models and adapt them to each API with just the right flexibility to <i>bend </i>the model, not break it.</p>
-                        <p class="">Unify APIs at any scale from microservices to cloud ecosystems. Free your client developers from API mismatch, and <i>integrate faster</i>.</p>
-                        <a class="btn btn-primary btn-lg" role="button">Get Started</a> 
-                    </ul>                     
-                    <p></p>
-                </div>
-                <div class="page-header"> 
-</div>
-                <br>
+    <link href="bootswatch-gh-pages/bootswatch-gh-pages/superhero/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="bootswatch-gh-pages/bootswatch-gh-pages/simplex/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="favicon.ico" rel="favicon"/>
+    <link href="starter-template.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container landing-page">
+    <!-- Starter Page : START-->
+    <div class="starter-template">
+        <div class="jumbotron">
+            <img class="img-responsive" src="img/RAPID-ML%20Logo/RAPID-ML%20Logo.png">
+
+            <h1>Domain-Driven API Modeling</h1>
+
+            <div class="text-left summary">
+                <p class="lead">RAPID-ML puts data modeling at the center of API design.</p>
+                <ul>
+                    <li><p class="">Describe data types <i>naturally </i>with an expressive, technology-independent modeling
+                        language.</p></li>
+
+                    <li><p class="">Share canonical data models and adapt them to each API with just the right flexibility to
+                        <i>bend </i>the model, not break it.</p></li>
+
+                    <li><p class="">Unify APIs at any scale from microservices to cloud ecosystems. Free your client developers
+                        from API mismatch, and <i>integrate faster</i>.</p></li>
+                </ul>
             </div>
-            <ul> 
-</ul>
-            <div class="pg-empty-placeholder">
-                <div class="row" style="max-width=100px">
-                    <div class="col-md-4">
-                        <h3>Clean, Intuitive Data Modeling</h3>
-                        <ul>
-                            <p class="h4">Describe data structures, relationships, simple types, enums and constraints using a natural, concise language.</p>
-                            <p class="h4">Code generators for JSON and XML Schema translate your definitions to physical message formats.</p>
-                            <p class="h4">Import shared data models from the filesystem, github or any http repository.</p> 
-                        </ul>                         
-                    </div>
-                    <div class="col-md-8">
-                        <img src="img/Code%20Screenshots/dataModelDark.png" width="95%" class="img-responsive img-thumbnail center-block" style="max-width: 500px;"> 
-                    </div>
+            <a class="btn btn-primary btn-lg" role="button">Get Started</a>
+        </div>
+        <div class="page-header"></div><br>
+    </div>
+    <!-- Starter Page : END-->
+
+    <div class="pg-empty-placeholder">
+        <!-- Clean, Intuitive Data Modeling : START-->
+        <section class="section">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Clean, Intuitive Data Modeling</h3>
+                    <ul>
+                        <li><p class="h4">Describe data structures, relationships, simple types, enums and constraints using a
+                            natural, concise language.</p></li>
+
+                        <li><p class="h4">Code generators for JSON and XML Schema translate your definitions to physical message
+                            formats.</p></li>
+
+                        <li><p class="h4">Import shared data models from the filesystem, github or any http repository.</p></li>
+                    </ul>
                 </div>
-                <p><br></p>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/Code%20Screenshots/objectResourceDark.png" width="95%" class="img-responsive img-thumbnail center-block" style="max-width: 600px"> 
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Data-Bound Resources and Parameters</h3>
-                        <ul>
-                            <p class="h4">Expose data structures through your API by binding them directly into object resources and collection resources. &nbsp;</p>
-                            <p class="h4">To reference the bound data from a message payload, just say 'this'!</p>
-                            <p class="h4">Bind template and method parameters to properties to enable richer validation and code generation.</p>
-                        </ul>                         
-                    </div>
+                <div class="col-md-8">
+                    <img src="img/Code%20Screenshots/2015-11-18%2021_33_47-Start.png" class="center-block img-thumbnail">
                 </div>
-                <h1>Resources</h1>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="img/RAPID-ML%20Logo/RAPID-ML%20Graphic.png" class="img-responsive img-thumbnail center-block" width="90%" style="max-width: 200px;">
-                        <p><br></p>
-                        <p class="text-center"><button type="button" class="btn btn-default block-center">Read the Specification</button></p>
+            </div>
+        </section>
+        <!-- Clean, Intuitive Data Modeling : END -->
+
+        <!-- Data-Bound Resources and Parameters : START -->
+        <section class="section">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="img/Code%20Screenshots/2015-11-18%2021_58_14-Windows%20Shell%20Experience%20Host.png" class="center-block img-thumbnail"/>
+                </div>
+                <div class="col-md-4">
+                    <h3>Data-Bound Resources and Parameters</h3>
+                    <ul>
+                        <li><p class="h4">Expose data structures through your API by binding them directly into object resources
+                            and collection resources.</p></li>
+
+                        <li><p class="h4">To reference the bound data from a message payload, just say '<strong>this</strong>'!</p></li>
+
+                        <li><p class="h4">Bind template and method parameters to properties to enable richer validation and code
+                            generation.</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Data-Bound Resources and Parameters : END -->
+
+        <!-- Adapt Shared Data Models to Each API : START -->
+        <section class="section">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Adapt Shared Data Models to Each API</h3>
+                    <ul>
+                        <li><p class="h4">Use property sets to choose which properties to include,
+                            and add constraints to fine-tune them to your API.</p></li>
+
+                        <li><p class="h4">Specify a property set by explicit inclusion or exclusion.</p></li>
+
+                        <li><p class="h4">Tighten cardinality and primitive type constraints with built-in validations to protect the underlying data contract.</p></li>
+
+                        <li><p class="h4">Finally, canonical data models are a practical reality!</p></li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <img src="img/Code%20Screenshots/2015-11-18%2022_32_43-Settings.png" class="center-block img-thumbnail">
+                </div>
+            </div>
+        </section>
+        <!-- Adapt Shared Data Models to Each API : END -->
+
+        <!-- Hyperlink or Embed Referenced Data Structures : START -->
+        <section class="section">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="img/Code%20Screenshots/2015-11-18%2023_14_38-Windows%20Shell%20Experience%20Host.png" class="center-block img-thumbnail"/>
+                </div>
+                <div class="col-md-4">
+                    <h3>Hyperlink or Embed Referenced Data Structures</h3>
+                    <ul>
+                        <li><p class="h4">Reference properties connect one data structure to another. With RAPID-ML,
+                            you can express each reference as a hyperlink, embedded structure, or both.</p></li>
+
+                        <li><p class="h4">Use the <strong>referenceEmbed</strong> keyword to embed the referenced data structure,
+                            or just the properties you want.</p></li>
+
+                        <li><p class="h4">A <strong>referenceLink</strong> models the reference as a hyperlink to another resource,
+                            bound to the target data structure. Optionally "decorate" the hyperlink with embedded target properties to optimize client round-trips.</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Hyperlink or Embed Referenced Data Structures : END -->
+
+
+        <!-- Editing Tools : START -->
+        <h1 class="text-center"><strong>Editing Tools</strong></h1>
+        <section class="section editing-tools">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img class="center-block"
+                         src="img/RepreZen%20API%20Studio%20Logo/studiologo_with_trademark%20150dpi.png"/>
+                    <p>RepreZen API Studio is the integrated, full-lifecycle API design environment for RAPID-ML.</p>
+                    <button type="button" class="btn btn-default block-center">Try RAPID-ML in RepreZen API Studio</button>
+
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="img/RAPID-ML%20Logo/RAPID-ML%20Logo.png"
+                         class="center-block"/>
+                    <p>Looking for a free community edition or open source libraries?
+                        They're coming soon!</p>
+                    <button type="button" class="btn btn-default"
+                            data-toggle="modal" data-target="#free-editing-modal">Tell me when the free stuff is available.</button>
+                </div>
+            </div>
+        </section>
+        <!-- Editing Tools : END -->
+
+        <!-- Editing Tools Modals : START -->
+        <div class="modal fade" id="free-editing-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">RAPID-ML</h4>
                     </div>
-                    <div class="col-md-4">
-                        <img src="img/Quick%20Reference%20Card/QRCUpdateSquare.png" class="img-thumbnail center-block img-responsive" width="90%" height="40%" style="max-width: 200px;">
-                        <p><br></p>
-                        <p class="text-center"><button type="button" class="btn btn-default">Download the Quick Reference Card&nbsp;</button></p>
+                    <div class="modal-body">
+                        <p>Looking for a free community edition or open source libraries?
+                            They're coming soon!</p>
                     </div>
-                    <div class="col-md-4">
-                        <img src="img/OctocatSquare.png" class="img-thumbnail center-block img-responsive" width="90%" style="max-width: 200px;">
-                        <p><br></p>
-                        <p class="text-center"><button type="button" class="btn btn-default">Read the Specification</button></p>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /.container -->
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-    </body>
+        <!-- Editing Tools Modals : END -->
+
+        <!-- Resources : START -->
+        <h1 class="text-center"><strong>Resources</strong></h1>
+        <section class="section">
+            <div class="row grid-border-container">
+                <div class="col-md-4">
+                    <img class="center-block"
+                         src="img/RAPID-ML%20Logo/RAPID-ML%20Graphic.png"/>
+                    <p class="text-center">
+                        <button type="button" class="btn btn-default block-center">Read the Specification</button>
+                    </p>
+                </div>
+                <div class="col-md-4 border-width">
+                    <img src="img/Quick%20Reference%20Card/QRCUpdateSquare.png"
+                         class="center-block"/>
+                    <p class="text-center">
+                        <button type="button" class="btn btn-default">Download the Quick Reference Card</button>
+                    </p>
+                </div>
+                <div class="col-md-4 border-width">
+                    <img class="center-block"  src="img/OctocatSquare.png"/>
+                    <p class="text-center">
+                        <button type="button" class="btn btn-default">Read the Specification</button>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Resources : END -->
+
+        <!-- Community : START -->
+        <h1 class="text-center"><strong>Community</strong></h1>
+        <section class="section">
+            <div class="row grid-border-container">
+                <div class="col-md-4">
+                    <img class="center-block"
+                         src="img/Mail-icon.png"/>
+
+                    <p class="text-center">
+                        <button type="button" class="btn btn-default block-center"
+                                data-toggle="modal" data-target="#subscribe-mail-list-modal">Subscribe to the Mailing List</button>
+                    </p>
+                </div>
+                <div class="col-md-4 border-width">
+                    <img src="img/google-groups-512.png"
+                         class="center-block"/>
+
+                    <p class="text-center">
+                        <button type="button" class="btn btn-default">Join the Google Group</button>
+                    </p>
+                </div>
+                <div class="col-md-4 border-width">
+                    <img src="img/TwitterLogo_%2355acee.png" class="center-block"/>
+                    <p class="text-center">
+                        <button type="button" class="btn btn-default">Follow @RAPID_ML on Twitter</button>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Community : END -->
+
+        <!-- Community Modals : START -->
+        <div class="modal fade" id="subscribe-mail-list-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"><strong>Subscribe to the Mailing List</strong></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="hsform-loader" class="text-center" style="display: none;">Loading...</div>
+                        <div id="hsform"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Community Modals : END -->
+
+        <!-- Footer : START -->
+        <footer class="text-center">
+            <p>© Copyright 2015 Modelsolv, Inc. All rights reserved.</p>
+        </footer>
+        <!-- Footer : END -->
+    </div>
+</div>
+<!-- /.container -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- HotSpot Form Script : START -->
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<!-- HotSpot Form Script : END -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        /*---- Subscribe mail list modal load Event : START -----*/
+        $('#subscribe-mail-list-modal').on('show.bs.modal', function (event) {
+            $('#hsform').empty();
+            $('#hsform-loader').show();
+            hbspt.forms.create({
+                portalId: '597611',
+                formId: '6a2bad69-88a3-423f-a3cd-e7e723d90f27',
+                target: '#hsform',
+                submitButtonClass:'btn btn-default',
+                onBeforeFormInit:function(){
+                    $('#hsform-loader').hide();
+                },
+                onFormReady:function(){
+
+                }
+            });
+        });
+        /*---- Subscribe mail list modal load Event : END -----*/
+    });
+</script>
+</body>
 </html>
