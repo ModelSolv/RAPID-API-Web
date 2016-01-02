@@ -73,10 +73,7 @@
         <!-- Data-Bound Resources and Parameters : START -->
         <section class="section">
             <div class="row">
-                <div class="col-md-8">
-                    <img src="img/Code%20Screenshots/2015-11-18%2021_58_14-Windows%20Shell%20Experience%20Host.png" class="center-block img-thumbnail"/>
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-md-push-8">
                     <h3>Data-Bound Resources and Parameters</h3>
                     <ul>
                         <li><p class="h4">Expose data structures through your API by binding them directly into object resources
@@ -87,6 +84,9 @@
                         <li><p class="h4">Bind template and method parameters to properties to enable richer validation and code
                             generation.</p></li>
                     </ul>
+                </div>
+                <div class="col-md-8 col-md-pull-4">
+                    <img src="img/Code%20Screenshots/2015-11-18%2021_58_14-Windows%20Shell%20Experience%20Host.png" class="center-block img-thumbnail"/>
                 </div>
             </div>
         </section>
@@ -118,10 +118,7 @@
         <!-- Hyperlink or Embed Referenced Data Structures : START -->
         <section class="section">
             <div class="row">
-                <div class="col-md-8">
-                    <img src="img/Code%20Screenshots/2015-11-18%2023_14_38-Windows%20Shell%20Experience%20Host.png" class="center-block img-thumbnail"/>
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-md-push-8">
                     <h3>Hyperlink or Embed Referenced Data Structures</h3>
                     <ul>
                         <li><p class="h4">Reference properties connect one data structure to another. With RAPID-ML,
@@ -133,6 +130,9 @@
                         <li><p class="h4">A <strong>referenceLink</strong> models the reference as a hyperlink to another resource,
                             bound to the target data structure. Optionally "decorate" the hyperlink with embedded target properties to optimize client round-trips.</p></li>
                     </ul>
+                </div>
+                <div class="col-md-8 col-md-pull-4">
+                    <img src="img/Code%20Screenshots/2015-11-18%2023_14_38-Windows%20Shell%20Experience%20Host.png" class="center-block img-thumbnail"/>
                 </div>
             </div>
         </section>
@@ -155,32 +155,12 @@
                          class="center-block"/>
                     <p>Looking for a free community edition or open source libraries?
                         They're coming soon!</p>
-                    <button type="button" class="btn btn-default"
-                            data-toggle="modal" data-target="#free-editing-modal">Tell me when the free stuff is available.</button>
+                    <a class="btn btn-default" data-toggle="modal" data-target="#subscribe-mail-list-modal">
+                        Tell me when the free stuff is available.</a>
                 </div>
             </div>
         </section>
         <!-- Editing Tools : END -->
-
-        <!-- Editing Tools Modals : START -->
-        <div class="modal fade" id="free-editing-modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">RAPID-ML</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Looking for a free community edition or open source libraries?
-                            They're coming soon!</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Editing Tools Modals : END -->
 
         <!-- Resources : START -->
         <h1 class="text-center"><strong>Resources</strong></h1>
@@ -190,20 +170,20 @@
                     <img class="center-block"
                          src="img/RAPID-ML%20Logo/RAPID-ML%20Graphic.png"/>
                     <p class="text-center">
-                        <button type="button" class="btn btn-default block-center">Read the Specification</button>
+                        <a class="btn btn-default block-center">Read the Specification</a>
                     </p>
                 </div>
                 <div class="col-md-4 border-width">
                     <img src="img/Quick%20Reference%20Card/QRCUpdateSquare.png"
                          class="center-block"/>
                     <p class="text-center">
-                        <button type="button" class="btn btn-default">Download the Quick Reference Card</button>
+                        <a class="btn btn-default">Download the Quick Reference Card</a>
                     </p>
                 </div>
                 <div class="col-md-4 border-width">
                     <img class="center-block"  src="img/OctocatSquare.png"/>
                     <p class="text-center">
-                        <button type="button" class="btn btn-default">Read the Specification</button>
+                        <a class="btn btn-default">Read the Specification</a>
                     </p>
                 </div>
             </div>
@@ -219,8 +199,8 @@
                          src="img/Mail-icon.png"/>
 
                     <p class="text-center">
-                        <button type="button" class="btn btn-default block-center"
-                                data-toggle="modal" data-target="#subscribe-mail-list-modal">Subscribe to the Mailing List</button>
+                        <a class="btn btn-default block-center" data-toggle="modal"
+                           data-target="#subscribe-mail-list-modal">Subscribe to the Mailing List</a>
                     </p>
                 </div>
                 <div class="col-md-4 border-width">
@@ -228,25 +208,25 @@
                          class="center-block"/>
 
                     <p class="text-center">
-                        <button type="button" class="btn btn-default">Join the Google Group</button>
+                        <a class="btn btn-default">Join the Google Group</a>
                     </p>
                 </div>
                 <div class="col-md-4 border-width">
                     <img src="img/TwitterLogo_%2355acee.png" class="center-block"/>
                     <p class="text-center">
-                        <button type="button" class="btn btn-default">Follow @RAPID_ML on Twitter</button>
+                        <a class="btn btn-default">Follow @RAPID_ML on Twitter</a>
                     </p>
                 </div>
             </div>
         </section>
         <!-- Community : END -->
 
-        <!-- Community Modals : START -->
+        <!-- Modals : START -->
         <div class="modal fade" id="subscribe-mail-list-modal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <a class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
                         <h4 class="modal-title"><strong>Subscribe to the Mailing List</strong></h4>
                     </div>
                     <div class="modal-body">
@@ -256,7 +236,7 @@
                 </div>
             </div>
         </div>
-        <!-- Community Modals : END -->
+        <!-- Modals : END -->
 
         <!-- Footer : START -->
         <footer class="text-center">
