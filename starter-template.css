@@ -26,17 +26,14 @@
 }
 
 .landing-page section.editing-tools img{
-    display: block;
     margin: 20px auto;
-    max-width: 250px;
-    max-height: 8em;
-    width: auto;
-    height: auto;
+    max-height: 7.5em;
 }
 
 .landing-page section.editing-tools p{
-    width: 45%;
     margin: 20px auto;
+    line-height: 1.5;
+    padding: 0 40px;
 }
 
 .landing-page .grid-border-container .col-md-4{
