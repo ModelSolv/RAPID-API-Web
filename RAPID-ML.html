@@ -21,6 +21,15 @@
 </head>
 <body>
 <div class="container landing-page">
+    <!-- Header : START -->
+    <header class="row header">
+        <div class="pull-right">
+            <a class="btn btn-link" target="_blank" href="http://rapid-api.org/rapid-ml">Home</a>
+            <a class="btn btn-link" target="_blank" href="http://rapid-api.org/rapid-ml/spec/current/desktop">Specificatio</a>
+        </div>
+    </header>
+    <!-- Header : END -->
+
     <!-- Starter Page : START-->
     <div class="starter-template">
         <div class="jumbotron">
@@ -41,7 +50,7 @@
                         from API mismatch, and <i>integrate faster</i>.</p></li>
                 </ul>
             </div>
-            <a class="btn btn-primary btn-lg" role="button">Get Started</a>
+            <a class="btn btn-primary btn-lg page-scroll" href="#editing-tools">Get Started</a>
         </div>
         <div class="page-header"></div><br>
     </div>
@@ -139,14 +148,14 @@
         <!-- Hyperlink or Embed Referenced Data Structures : END -->
 
         <!-- Editing Tools : START -->
-        <h1 class="text-center"><strong>Editing Tools</strong></h1>
-        <section class="section editing-tools">
+        <section class="section editing-tools" id="editing-tools">
+            <h1 class="text-center"><strong>Editing Tools</strong></h1>
             <div class="row">
                 <div class="col-md-6 text-center">
                     <img class="img-responsive"
                          src="img/RepreZen%20API%20Studio%20Logo/studiologo_with_trademark%20150dpi.png"/>
                     <p class="h4">RepreZen API Studio is the integrated, full-lifecycle API design environment for RAPID-ML.</p>
-                    <button type="button" class="btn btn-default block-center">Try RAPID-ML in RepreZen API Studio</button>
+                    <a href="http://reprezen.com/trial-offer" target="_blank" type="button" class="btn btn-default block-center">Try RAPID-ML in RepreZen API Studio</a>
 
                 </div>
                 <div class="col-md-6 text-center">
@@ -154,7 +163,7 @@
                          class="img-responsive"/>
                     <p class="h4">Looking for a free community edition or open source libraries?
                         They're coming soon!</p>
-                    <a class="btn btn-default" data-toggle="modal" data-target="#subscribe-mail-list-modal">
+                    <a class="btn btn-default block-center" data-toggle="modal" data-target="#subscribe-mail-list-modal">
                         Tell me when the free stuff is available.</a>
                 </div>
             </div>
@@ -162,27 +171,27 @@
         <!-- Editing Tools : END -->
 
         <!-- Resources : START -->
-        <h1 class="text-center"><strong>Resources</strong></h1>
         <section class="section">
+            <h1 class="text-center"><strong>Resources</strong></h1>
             <div class="row grid-border-container">
                 <div class="col-md-4">
                     <img class="center-block"
                          src="img/RAPID-ML%20Logo/RAPID-ML%20Graphic.png"/>
                     <p class="text-center">
-                        <a class="btn btn-default block-center">Read the Specification</a>
+                        <a class="btn btn-default block-center" href="http://rapid-api.org/rapid-ml/spec/current/desktop/" type="button" target="_blank">Read the Specification</a>
                     </p>
                 </div>
                 <div class="col-md-4 border-width">
                     <img src="img/Quick%20Reference%20Card/QRCUpdateSquare.png"
                          class="center-block"/>
                     <p class="text-center">
-                        <a class="btn btn-default">Download the Quick Reference Card</a>
+                        <a href="https://19dd14f1bca25029f68d-656faf528029c44dd1ad9f4b523fa82b.ssl.cf5.rackcdn.com/RepreZen%20RAPID-ML%20QRC.pdf" type="button" class="btn btn-default block-center" target="_blank">Download the Quick Reference Card</a>
                     </p>
                 </div>
                 <div class="col-md-4 border-width">
                     <img class="center-block"  src="img/OctocatSquare.png"/>
                     <p class="text-center">
-                        <a class="btn btn-default">Read the Specification</a>
+                        <a href="https://github.com/RepreZen" class="btn btn-default block-center" target="_blank">Read the Specification</a>
                     </p>
                 </div>
             </div>
@@ -190,8 +199,8 @@
         <!-- Resources : END -->
 
         <!-- Community : START -->
-        <h1 class="text-center"><strong>Community</strong></h1>
         <section class="section">
+            <h1 class="text-center"><strong>Community</strong></h1>
             <div class="row grid-border-container">
                 <div class="col-md-4">
                     <img class="center-block"
@@ -199,7 +208,7 @@
 
                     <p class="text-center">
                         <a class="btn btn-default block-center" data-toggle="modal"
-                           data-target="#subscribe-mail-list-modal">Subscribe to the Mailing List</a>
+                           data-target="#subscribe-mail-list-modal" target="_blank">Subscribe to the Mailing List</a>
                     </p>
                 </div>
                 <div class="col-md-4 border-width">
@@ -207,13 +216,13 @@
                          class="center-block"/>
 
                     <p class="text-center">
-                        <a class="btn btn-default">Join the Google Group</a>
+                        <a class="btn btn-default block-center" href="https://groups.google.com/forum/#!forum/rapid-ml" type="button" target="_blank">Join the Google Group</a>
                     </p>
                 </div>
                 <div class="col-md-4 border-width">
                     <img src="img/TwitterLogo_%2355acee.png" class="center-block"/>
                     <p class="text-center">
-                        <a class="btn btn-default">Follow @RAPID_ML on Twitter</a>
+                        <a class="btn btn-default block-center" href="https://twitter.com/rapid_ml" type="button" target="_blank">Follow @RAPID_ML on Twitter</a>
                     </p>
                 </div>
             </div>
@@ -252,6 +261,10 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/scrolling-nav.js"></script>
 
 <!-- HotSpot Form Script : START -->
 <!--[if lte IE 8]>
